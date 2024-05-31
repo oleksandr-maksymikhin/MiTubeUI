@@ -1,0 +1,124 @@
+@import "../Variables.scss";
+
+.channel-videos {
+    padding: 0 2vw;
+    color: $button-color;
+    width: 100%;
+
+    h2 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+
+    button {
+        width: 20vw;
+    }
+
+    span.row {
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+    }
+
+    table {
+        margin-top: 1vh;
+        width: 100%;
+        color: $button-color;
+
+        .video-col {
+            text-align: left;
+        }
+
+       
+        
+       
+       
+
+    }
+}
+
+.playlist-row {
+    .thumbnail-img {
+        max-width: 15vw;
+        max-height: 14vw;
+        border-radius: 30px;
+        margin: 1vh !important;
+    }
+
+    span {
+        padding: 0 !important;
+    }
+
+    .col {
+        margin-left: 2vw;
+    }
+
+    :first-child {
+        text-align: left;
+        margin-right: 5vw;
+    }
+
+    td {
+        margin: 0 2vw;
+        .access-block{
+            display: flex;
+            width: 100%;
+            justify-content: center !important;
+            .acces-icon{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    :nth-child(n + 2){
+        padding-top: 3vh;
+        align-content: start;
+        text-align: center;
+    }
+
+    :last-child {
+        text-align: right;
+    }
+}
+
+.video-row {
+    .thumbnail-img {
+        max-width: 15vw;
+        max-height: 14vw;
+        border-radius: 30px;
+        margin: 1vh !important;
+    }
+
+    span {
+        padding: 0 !important;
+    }
+
+    .col {
+        margin-left: 2vw;
+    }
+
+    :first-child {
+        text-align: left;
+        margin-right: 5vw;
+    }
+
+    .access-block{
+        display: flex;
+        width: 100%;
+        justify-content: center !important;
+        .acces-icon{
+            margin-right: 10px;
+        }
+    }
+
+    :nth-child(2) {
+        padding-top: 3vh;
+        align-content: start;
+        text-align: center;
+    }
+
+    :nth-child(n + 3){
+        padding-top: 3vh;
+        align-content: start;
+        text-align: right;
+    }
+}

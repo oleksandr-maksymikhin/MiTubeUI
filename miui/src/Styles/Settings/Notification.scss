@@ -1,0 +1,80 @@
+@import "../Variables.scss";
+
+.notificationsMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vh 0px 0px 5vw;
+   
+    .n1 {
+        font-size: 25px;
+    }
+
+    hr {
+        align-self: self-start;
+        width: 55vw;
+        margin: 2vh 0px 2.5vh 0px;
+    }
+
+    .inform {
+        display: flex;
+        flex-direction: row;
+        align-self: self-start;
+        align-items: center;
+         margin-top:1vh ;
+
+    }
+
+}
+
+
+
+
+
+
+.toggle {
+    margin: 0 2vw 0 0;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.roundbutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: $text-color;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 3.4rem;
+    border: 2px solid $button-color;
+    cursor: pointer;
+}
+
+.roundbutton:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    border: 2px solid $button-color;
+    display: block;
+    left: 4px;
+    bottom: 5px;
+    background-color: $text-color;
+    transition: all 0.3s;
+}
+
+
+input:checked+.roundbutton:before {
+    transform: translate(23px, 0);
+    background-color: $button-color;
+}

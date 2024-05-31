@@ -1,0 +1,32 @@
+@import "./Variables.scss";
+
+.content-row {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 200px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1280px){
+    .content-row {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-row {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .content-row {
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+}

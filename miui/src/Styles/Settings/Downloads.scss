@@ -1,0 +1,90 @@
+@import "../Variables.scss";
+
+.downloadsMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 3vh 0px 0px 5vw;
+
+  .n1 {
+    font-size: 25px;
+  }
+
+  hr {
+    align-self: self-start;
+    width: 55vw;
+    margin: 2.5vh 0px 4vh 0px;
+  }
+
+  .inform {
+    display: flex;
+    flex-direction: row;
+    align-self: self-start;
+    margin-top:1vh ;
+
+    button {
+      background-color: $button-color;
+      font-size: 20px;
+    }
+
+
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 3vh 4vw;
+    }
+
+    input[type="radio"] {
+      border: 0 !important;
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px !important;
+      overflow: hidden;
+      padding: 0 !important;
+      position: absolute !important;
+      width: 1px !important;
+    }
+
+    label {
+      color: $button-color;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    label::before {
+      content: '';
+      display: block;
+      height: 1.25em;
+      width: 1.25em;
+      border: solid 2px $button-color;
+      border-radius: 50%;
+      margin-right: 2vw;
+      transition: border ease-in 150ms, box-shadow ease-in 150ms;
+    }
+
+    input[type="radio"]:checked+label,
+    input[type="radio"]:focus+label {
+      color: $button-color;
+    }
+
+    input[type="radio"]:checked+label::before {
+      background: radial-gradient(0.75em circle at center, currentColor 50%, transparent 55%);
+      border-color: currentColor;
+    }
+
+    input[type="radio"]:focus+label::before {
+      border-color: currentColor;
+    }
+
+  }
+
+  .first {
+
+    align-self: start;
+
+  }
+}

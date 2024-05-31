@@ -1,0 +1,58 @@
+@import "../Variables.scss";
+
+.certificateMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 450px;
+    width: 18.2vw;
+    height: 57.2vh;
+    
+    
+    .certificate{
+        
+        align-items: center;
+        justify-content: center;
+        height: 5vh; 
+        margin:   2vh 0px 2vh 0px ;
+        
+    
+    }
+    hr{
+        width: 15vw;
+        margin:  2vh 0px 2.5vh 0px;
+    }
+    .inform{
+        display: flex;
+        flex-direction: row;
+        align-self: self-start;
+        margin-left: 1.3vw;
+        img{
+            width: 1.5vw;
+            height: 1.5vw;
+            border-radius: 0px;
+            margin: 1vh 1vw 1vh 0px;
+        
+        }
+        .n3{
+            font-size: 15px;
+        }
+    } 
+
+    .search {
+        margin:  2vh 0px 2.5vh 0px;
+        width: 16.5vw;
+        height: 70px;
+        input[type="text"] {
+           
+            padding: 0 3.5vw 0 1vw;
+        }
+        button {
+            width: 20%;
+           
+        }
+    }
+  
+
+}

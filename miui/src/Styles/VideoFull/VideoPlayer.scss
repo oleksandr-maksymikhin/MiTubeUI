@@ -1,0 +1,57 @@
+@import "../Variables.scss";
+@media screen and (min-width:  1331px  ){
+.videoPlayer {
+    width: fit-content;
+    .Img {
+        width: 61.5vw;
+        height: 100%;
+    }
+
+}
+}
+@media screen and (min-width:  451px  ) and (max-width: 1330px) {
+    .videoPlayer {
+        .Img {
+            width: 79.7vw;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:  51px  ) and (max-width: 450px) {
+    .videoPlayer {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        .Img {
+            width: 90.7vw;
+            height: 100%;
+        }
+
+        .back-overlay-button{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 2vh;
+            top: 1vh;
+            width: 3vh;
+            height: 3vh;
+            opacity: .1;
+            z-index: 3;
+        }
+
+        .back-overlay-button:hover {
+            opacity: 1;
+        }
+
+        img {
+            padding: 1vh 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}

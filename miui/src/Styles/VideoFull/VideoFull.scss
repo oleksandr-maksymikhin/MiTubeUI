@@ -1,0 +1,558 @@
+@import "../Variables.scss";
+
+.video-container {
+    
+    padding: 1vh 2vw;
+    margin-left: 2vw;
+}
+
+.content-row-start {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+
+}
+
+.showComents {
+    visibility: hidden;
+    display: none;
+}
+
+
+.action-group {
+    display: flex;
+    flex-flow: row;
+
+    
+}
+
+.Img {
+    border-radius: 30px;
+}
+
+.item-1 {
+    flex-grow: 1;
+    margin: 0;
+
+}
+
+.item-2 {
+    flex-grow: 2;
+    margin: 0;
+}
+.like{
+    svg {
+        width:2vw;
+        height: 2vw;
+        margin: 0 2vw 0 3vw;
+      }
+    
+    color: $secondary-color
+}
+
+
+.folow {
+    display: flex;
+    flex-flow: wrap;
+
+    justify-content: space-between;
+    width: 60.5vw;
+    height: 70px;
+
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        height: 70px;
+        justify-content: space-around;
+    }
+
+    button {
+        margin: 0;
+        height: 100%;
+        justify-content: center;
+
+    }
+
+    span {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    div[alt="like"] {
+        margin: 0 0.5vw;
+    }
+
+    div[alt="dislike"] {
+        margin: 0 0.5vw;
+        transform: rotate(180deg);
+    }
+
+    
+        .inactive {
+            pointer-events: none;
+            opacity: 0.5;
+            
+        }
+       
+
+    .icon-btn {
+        background-color: $primary-color;
+        width: 50px;
+        padding: 0;
+        height: 50px;
+        align-self: center;
+    }
+}
+
+.plag {
+
+    border-radius: 30px;
+    margin: 2vh 0;
+    background-color: $primary-color;
+    padding: 1.7vh;
+    width: 59vw;
+
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+
+}
+
+.m-5 {
+    margin-left: -5%;
+}
+
+#myDropdown {
+    flex-flow: nowrap;
+    flex-direction: column;
+
+}
+
+.dropdown-content {
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    justify-content: center;
+    background-color: $primary-color;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 210px;
+    border-radius: 30px;
+    left: 67vw;
+
+    a {
+        padding: 12px;
+        padding-left: 30px;
+        text-decoration: none;
+        display: block;
+
+        img {
+            margin-right: 15px;
+        }
+    }
+
+    a:hover {
+        background-color: $secondary-color;
+    }
+}
+
+
+
+.visible {
+
+    visibility: visible;
+    display: block;
+}
+
+.hiddens {
+
+    visibility: visible;
+    display: block;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1330px) {
+
+    .video-container {
+    
+        padding: 1vh 2vw;
+        margin-left: 0;
+    }
+
+    .dropdown-content {
+        margin-top: 70px;
+
+
+    }
+
+    .m-5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-1 {
+        flex-grow: 0;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+        width: 60vw;
+
+        .item {
+            .row {
+                justify-content: space-around
+            }
+
+            ;
+        }
+    }
+
+    .item-2 {
+        flex-grow: 0;
+        justify-self: center;
+        justify-content: center;
+        align-items: stretch;
+        margin: auto;
+        position: relative;
+
+        .container {
+            height: 100%;
+
+            .wd {
+                width: 70vw;
+            }
+        }
+
+        .item {
+            .row {
+                .make-comment {
+                    width: 70vw;
+                }
+            }
+        }
+
+        .folow {
+            width: 79vw;
+        }
+
+        .plag {
+            width: 76vw;
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 640px) {
+    .item-2 {
+        .container {
+            height: 100%;
+
+            .wd {
+                width: 78vw;
+            }
+        }
+    }
+
+    .plag {
+        width: 70vw;
+    }
+
+    .folow {
+        width: 80vw;
+        height: 120px;
+
+        .name {
+            width: 35vw;
+        }
+
+        .btn-lg {
+            height: 40px;
+            width: 100px;
+            font-size: 16px;
+            padding: 0;
+            margin-left: 6vw;
+
+        }
+
+
+        .dropbtn {
+            width: 30px;
+            height: 30px;
+        }
+
+        .dropdown-content {
+            margin-top: 130px;
+
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .video-container {
+        margin-left: 0;
+    }
+
+    .item-1 {    
+        width: calc(100% - 2vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .item{
+            position: relative;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .item-2 {
+        flex-grow: 0;
+        justify-self: center;
+        justify-content: center;
+        align-items: stretch;
+        margin: auto;
+        position: relative;
+
+        .n1 {
+            font-size: 25px;
+        }
+
+        .container {
+            height: 100%;
+
+            .wd {
+                width: 78vw;
+            }
+        }
+
+        .item {
+            .row {
+                .make-comment {
+                    width: 78vw;
+                }
+            }
+        }
+
+        .folow {
+            width: 90vw;
+            height: 100px;
+
+            .n2 {
+                font-size: 16px;
+            }
+
+            .n3 {
+                font-size: 16px;
+            }
+
+            .userImg {
+                height: 30px;
+                width: 30px;
+                margin-right: 4vw;
+            }
+
+            .name {
+                width: 40vw;
+                height: 40px;
+
+            }
+
+            .btn-lg {
+                height: 25px;
+                width: 100px;
+                font-size: 16px;
+                padding: 0;
+                
+
+            }
+
+            img[alt="like"] {
+                margin: 0 2vw;
+                width: 20px;
+            }
+
+            img[alt="dislike"] {
+                margin: 0 2vw;
+                width: 20px;
+            }
+
+            .dropbtn {
+                width: 30px;
+                height: 30px;
+            }
+
+            .dropdown-content {
+                z-index: 5;
+                margin-top: 100px;
+                left: 20px;
+                width: 350px;
+                height: 160px;
+
+                .n2 {
+                    font-size: 16px;
+
+                }
+
+                img {
+                    width: 16px;
+                    justify-self: center;
+                }
+
+            }
+        }
+
+        .hiddens {
+
+            visibility: hidden;
+            display: none;
+            height: 0;
+        }
+}
+
+@media screen and (max-width: 450px) {
+    .like{
+        svg {
+            width:5vw;
+            height: 5vw;
+          }
+        
+    }
+    h1.n1 {
+        margin-top: 1vh;
+        margin-bottom: .5vh;
+    }
+
+    .n1 {
+        font-size: 16pt !important;
+    }
+
+    .folow {
+        justify-content:baseline;
+        width: 100%;
+
+        .channel-banner {
+            display: flex;
+            align-items: center;
+        }
+
+        .userImg {
+            width: 4vh;
+            height: 4vh;
+        }
+
+        .channel-name {
+            width: 40vw;
+            margin-left: 1vh;
+            font-size: 13pt;
+        }
+
+        .action-group {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            width: 40vw;
+        }
+
+        button {
+            margin: 0;
+            height: 50%;
+            padding: .5vh 2vh;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .user-details {
+            //flex: 1;
+            width: 50%;
+        }
+        span{
+            display: flex;
+            flex-flow: wrap;
+        }
+        img[alt="like"]{
+            margin:0  0.5vw ;
+        }
+        img[alt="dislike"]{
+            margin:0  0.5vw ;
+            transform: rotate(180deg);
+        }
+        // .icon-btn{
+        //     background-color: $primary-color;
+        //     width:50px ;
+        //     padding: 0;
+        //     height: 50px;
+        //     align-self: center;
+        // }
+    }
+
+    .dropdown-content, #myDropdown {
+        display: none;
+    }
+
+    .plag {
+        margin-top: 5vh;
+        width: 90% !important;
+        height: 7.5vh;
+        overflow: hidden;
+    }
+
+    .section-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .content-row-start {
+        width: unset;
+        padding: 0;
+       
+    }
+
+    .m-5{
+        margin-left: 0;
+    }
+    
+            .plag {
+                visibility: hidden;
+                display: none;
+
+            }
+
+            .mb-25 {
+                visibility: hidden;
+                display: none;
+
+            }
+
+            .showComents {
+                visibility: visible;
+                display: flex;
+                border-radius: 15px;
+                background-color: $primary-color;
+                height: 30px;
+                padding: 0 26px;
+                margin: 15px 0;
+                ;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+
+                img {
+
+                    min-height: 12px;
+                    min-width: 6px;
+                }
+            }
+
+        
+
+    }
+}

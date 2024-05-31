@@ -1,0 +1,52 @@
+@import "../Variables.scss";
+
+.general-settings-container {
+	background-color: transparent;
+	padding: 1vh;
+
+	.logo.row {
+		margin: 0;
+		padding: 2vh 1vh;
+
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		img {
+			width: 3vh;
+			height: 3vh;
+		}
+
+		h2 {
+			margin: 0;
+			padding: 0.3vh 0;
+			margin-left: 2vh;
+			font-size: 15pt;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0 1.5vh;
+		list-style: none;
+
+		li {
+			padding: 0 !important;
+			border-bottom: 3px solid $primary-bg;
+
+			h4 {
+				margin: 2vh 0;
+				padding: 0 0.4vh;
+			}
+			select {
+				color: $button-color;
+				margin: 0;
+				margin-bottom: 1vh;
+				border: none;
+				font-size: 1rem;
+			}
+		}
+	}
+}

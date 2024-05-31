@@ -1,0 +1,236 @@
+@import "./Styles/Variables.scss";
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100vh;
+    background-color: $text-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    height: 100vh;
+    margin: 0;
+    background-color: $text-color;
+    transition: background-color 0.3s ease;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin-top: 7vh;
+    margin-left: 10vw;
+    width: 100%;
+    height: 100%;
+    transition: margin-left .5s;
+}
+
+button {
+    margin: 1vw;
+    background-color: $primary-bg;
+    color: $primary-color;
+    border: none;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    cursor: pointer;
+}
+
+.btn-inverted {
+    background-color: $primary-color;
+    color: $primary-bg;
+}
+
+.btn-trp {
+    color: $primary-bg;
+    background-color: transparent;
+    border: $primary-bg 2px solid;
+}
+
+.btn-lg {
+    padding: 1vh 2vw;
+    width: 12vw;
+    height: 6vh; 
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.btn-sm {
+    padding: .5vh 1vw;
+    width: 6vw;
+    height: fit-content; 
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.btn-active {
+    background-color: $secondary-color;
+}
+
+.icon-btn {
+    margin: 5px;
+    padding: 1.5vh;
+    border: none;
+    transition: background-color 0.3s linear;
+    border-radius: 30px;
+    background-color: transparent;
+
+    img {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+.icn {
+    filter: $svg-filter;
+}
+
+.icon-btn:hover {
+    cursor: pointer;
+}
+
+html[data-color-theme="dark"] {
+    #search-btn {
+        filter: brightness(0) saturate(100%) invert(65%) sepia(3%) saturate(4293%) hue-rotate(357deg) brightness(89%) contrast(92%);
+    }
+}
+
+hr {
+    border-color: $primary-bg;
+    background-color: $primary-bg;
+    color: $primary-bg;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.removed {
+    display: none !important;
+}
+
+.fullscreen {
+    width: calc(100vw - 2 * 1vh);
+    margin-left: 0;
+}
+
+/* Ім’я користувача */
+.n2{
+
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color:$button-color;
+
+}
+
+/* Назва відео */
+.n1{
+
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    color:$button-color;
+}
+
+.n3{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color:$button-color;
+}
+
+.n4{
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color:$primary-bg;
+}
+
+.desktop {
+    display: initial !important;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 450px){
+    img {
+        min-width: 2vh;
+        min-height: 2vh;
+    }
+    
+    .mobile { 
+        display: initial !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .content {
+        margin-left: 0 !important;
+        margin-top: 8vh;
+        padding: 0 1vh;
+    }
+
+    .btn-sm {
+        padding: .5vh 2vw;
+        font-size: medium;
+    }
+
+    .n2 {
+        font-size: 12pt;
+    }
+
+    .n3 {
+        font-size: 15pt;
+    }
+}
+
+
+input,
+textarea
+{
+    border-radius: 30px;
+    height: 47px;
+    border: 3px solid $button-color;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    background-color: transparent;
+    
+
+}
+
+input:focus{
+    color:$primary-color;
+    border-color:$button-color;
+}

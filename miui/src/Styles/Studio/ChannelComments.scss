@@ -1,0 +1,52 @@
+@import "../Variables.scss";
+
+.coment-row{
+margin-left: 2.6vw;
+margin-top: 5vh;
+
+}
+
+td .item{
+       
+        padding-left: 2.4vw;
+        margin-bottom:  0px;
+    }
+
+td .content-row-start {
+    padding: 1.5vh 0px ;
+
+    div .userImg{
+        width:4vw;
+        height:4vw;
+        border-radius: 50px;
+    } 
+    
+    .wd{
+        width: 45vw;
+    }
+
+}
+
+#commentRow > td:nth-child(1) > div > div.wd > button{
+   display: none;
+}
+.inform{
+    justify-content: space-evenly;
+    
+    .chennel{
+        opacity: 0;
+        display: none;
+    }
+    .date{
+        opacity: 1;
+    }
+}
+h2{
+    margin-left: 2.6vw;
+    margin-top: 5vh; 
+}
+
+td[colSpan="2"]{
+    border-bottom: 3px solid $primary-bg;
+}
+

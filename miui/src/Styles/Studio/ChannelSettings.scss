@@ -1,0 +1,210 @@
+@import "../Variables.scss";
+
+.settings-content{
+    padding: 0 2vw;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    form{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        input,
+        textarea{
+            width: 50%;
+            border: 3px solid $button-color;
+            margin-left: 0;
+            outline-color: $button-color !important; 
+        }
+        input[type="text"]{
+            color:$button-color;
+        }
+        .photo-baner{
+            background-color: inherit;
+            width: 50%;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            
+            .img-new-photo-profile,
+            .img-new-photo-banner
+            {
+                background-color:$primary-color;
+                border-radius: 30px;
+                border:0;
+                
+            }
+            .img-new-photo-profile{
+                width: 150px;
+                height: 150px;
+
+            }
+            .img-new-photo-banner{
+                width:300px;
+                height: 90px;
+            }
+
+            div{
+                background-color: inherit;
+                width: 50%;
+                margin-top: 0;
+                margin-left: 20px;
+                
+                span{
+                    text-align: left;
+                    margin-top:0;
+                }
+            }
+            .btn-p-b{
+                
+                display: flex;
+                margin-left: 0;
+                .upload-button {
+                    padding: 1vh 2vw;
+                    width: 12vw;
+                    height: 4vh; 
+                    border-radius: 30px;
+                    font-size: 30px;
+                    margin-left: 0;
+                }
+                button,
+                .upload-button{
+                    background-color: $primary-color;
+                    color:$button-color;
+                }
+                
+            }
+        }
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    div{
+        border-radius: 30px;
+        background-color: $button-color;
+        width: 13vw;
+        font-size: 20px;
+        color: $primary-color;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        
+    }
+    span{
+        display: inline-block;
+        font-size: 15px;
+        color:$button-color;
+        margin-top: 25px;
+    }
+
+    
+
+    textarea{
+        height: 20vh;
+        resize: none;
+        padding-top: 1.5rem;
+        
+    }
+
+    ::placeholder{
+        color: $button-color;
+        padding: 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    input[type=text]:focus,
+    textarea:focus {
+        border: 3px solid $button-color;
+        color: $button-color;
+    }
+
+    .input-copy-url{
+        background: url('../../Assets/Icons/copy-icon.svg') no-repeat scroll;
+        background-position:98% center;
+        background-size: 4vh;
+    }
+    
+    button{
+        background-color: $secondary-color;
+        margin-left: 0;
+    }
+   input,
+   textarea{
+    color: $button-color;
+   }
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .settings-content{
+        margin-left: 10vw;
+        div{
+            width: 40vw
+        }
+
+   }
+   .settings-content form > div,
+   .settings-content form > span,
+   .settings-content form > input,
+   .settings-content form > textarea,
+   .settings-content form > button 
+    {
+       width:70vw;
+    }
+    .photo-baner {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        text-align: center;
+         img{
+             margin-bottom: 20px;
+         }
+         div span{
+             width: 65vw;
+         }
+         .btn-p-b {
+             margin-top: 15px; 
+             text-align: center;
+         }
+         
+     }
+     
+   
+}
+@media screen and (max-width: 479px) {
+    .settings-content{
+         margin-left: 10vw;
+         div{
+             width: 80%;
+         }
+         
+    }
+        .settings-content form > div,
+     .settings-content form > span,
+     .settings-content form > input,
+     .settings-content form > textarea,
+     .settings-content form > button {
+         width: 65vw;
+     }
+     .photo-baner {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        text-align: center;
+         
+         img{
+             margin-bottom: 20px;
+         }
+         div span{
+             width: 65vw;
+         }
+         .btn-p-b {
+             margin-top: 15px; 
+             text-align: center;
+         }
+         
+     }
+     
+     
+     
+ }
+

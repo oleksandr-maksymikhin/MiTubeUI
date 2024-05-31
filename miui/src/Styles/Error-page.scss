@@ -1,0 +1,33 @@
+@import "./Variables.scss";
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 25vh auto 0;
+
+    img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: $button-color;
+        background-color: $primary-color;
+        padding: 10px;
+        margin: 2vh 0;
+        border-radius: 30px;
+        font-size: 32pt;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 1vh;
+        font-size: 20pt;
+        color: $button-color;
+        font-weight: normal;
+        text-align: justify;
+    }
+}

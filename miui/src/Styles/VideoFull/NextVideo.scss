@@ -1,0 +1,51 @@
+@import "../Variables.scss";
+
+.align-items-start {
+    margin-bottom: 2vh;
+    .Img{
+        max-width: 16vw;
+        border: 1px solid $button-color;
+    }
+
+    .next-inform {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        margin-left: 0.8vw;
+        min-height: 5vh;
+    
+        h4 {
+            margin: 0;
+        }
+    
+        .chennel {
+            opacity: 1;
+            display: block;
+        }
+    
+        .date {
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
+        }
+    }
+}
+
+.align-items-start:hover {
+    // .chennel {
+    //     opacity: 0;
+    // }
+
+    .date {
+        opacity: 1;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+        margin-bottom: 3.2vh;
+    }
+}

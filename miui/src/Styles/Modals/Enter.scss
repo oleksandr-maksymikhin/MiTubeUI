@@ -1,0 +1,163 @@
+@import "../Variables.scss";
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    align-items: center;
+    
+    label,
+    .input-register,
+    .input-register-email
+    {
+        margin:50px 50px 0 50px;
+        width: 85%;
+        border-color: $primary-color;
+    }
+    .input-register-email{
+        margin-top:0;
+    }
+    
+    
+    .input-register{
+        margin-top: 0;
+    }
+    .password{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .user-title{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    input::placeholder {
+        color:$primary-bg;
+    }
+    .button-cont{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1280px) {
+        .button-cont {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top:5vh ;
+            margin-right:  2vh;
+            
+            margin-left:  2vh;
+        }
+        .button-cont button {
+            width: auto;
+            margin-left: 2vh;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .button-cont {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top:5vh ;
+            margin-right:  5vh;
+           
+            margin-left:  5vh;
+        }
+        .button-cont button {
+            width: 45%;
+           
+        }
+    }
+    @media screen and (min-width: 750px) and (max-width: 1280px) {
+        
+        .button-cont {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .button-cont {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            width: 90%;
+            margin-top:2vh;
+            
+           
+        }
+        .button-cont button {
+            width:80%;
+            
+        }
+    }
+
+    
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        input[type=checkbox] {
+            position: relative;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 30px;
+            height: 30px;
+            background-color: transparent ;
+            border:3px solid  $primary-color ;
+            margin-top: 0;
+            margin-right: 5px;
+            margin-left: -10px;
+            border-radius: 10px;
+            accent-color: $primary-color;
+        }
+        input[type=checkbox]:checked::before {
+            content: '\2713';
+            color: $primary-color;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+       
+    }
+    a {
+        align-self: flex-start;
+        margin-left:25px;
+        margin-top: 20px;
+    }
+    input[type="email"]:-webkit-autofill,
+    input[type="email"]:-webkit-autofill:focus,
+    input[type="email"]:-webkit-autofill:hover,
+    input[type="email"]:focus {
+        
+        transition: background-color 5000s ease-in-out 0s; 
+        background-color: rgba(255, 255, 255, 0) !important;
+       
+    }
+    input[type="email"]{
+        color:$primary-color;
+    }
+    input[type="email"]:hover {
+        border-color:$primary-color ; 
+    }
+    input:focus {
+        outline-color: $primary-color !important; 
+    }
+    input[type="email"]:-webkit-autofill {
+        -webkit-text-fill-color: $primary-color  !important; 
+    }
+    input[type="text"]{
+        color:$primary-color;
+    }
+ 
+}

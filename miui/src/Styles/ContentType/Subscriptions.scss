@@ -1,0 +1,131 @@
+ @import "../Variables.scss";
+
+.subs-container {
+    padding: 2vh;
+}
+
+.header {
+    color: $primary-bg;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-left: 2vw;
+}
+
+.avatar {
+    width: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    > img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 10px 20px;
+    }
+}
+
+.desc {
+    width: 55%;
+    height: 100%;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #nameFollow{
+        display: inline-flex !important;
+       
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.1em;
+
+        :nth-child(2) {
+            margin-right: 3vw;
+        }
+    }
+
+    p {
+        font-size: smaller;
+    }
+}
+
+.action {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3vw;
+
+    .row {
+        justify-content: space-between;
+    }
+
+    button {
+        border-radius: 20px;
+        padding: 1vh 2vw;
+        background-color: $primary-color;
+        color: $button-color;
+        font-weight: bold;
+    }
+}
+
+.sub-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  margin: 2vh 0;
+  color: #DCA277;
+}
+
+@media screen and (max-width: 450px){
+    .subs-container {
+        padding: 1vh;
+        max-width: 100vw;
+    }
+
+    .sub-row {
+        .desc {
+            h4 {
+                font-size: 1em;
+                color: $primary-bg;
+            }
+
+            #nameFollow{
+                display: none !important;
+               
+            }
+        }
+
+        .avatar > img {
+            width: 15vw;
+            height: 15vw;
+            margin: 0;
+        }
+
+        .action {
+            button {
+                background-color: $primary-color;
+                min-width: fit-content;
+                flex-wrap: nowrap;
+                justify-content: center;
+                padding: 0;
+
+                img {
+                    margin: 1vh .5vh;
+                    width: 2vh;
+                    height: 2vh;
+                }
+            }
+        }
+    }
+}

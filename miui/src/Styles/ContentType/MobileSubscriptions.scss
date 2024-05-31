@@ -1,0 +1,51 @@
+@import "../Variables.scss";
+
+.mobile-subscriptions-container {
+    width: 100%;
+
+    .channels {
+        margin-top: 1vh;
+        justify-content: stretch;
+        width: 100%;
+
+        .row {
+            overflow: scroll;
+            flex-wrap: nowrap;
+            padding-bottom: 1vw;
+            scrollbar-width: none;
+            flex: 6;
+        }
+
+        button {
+            background-color: transparent;
+            color: $button-color;
+            flex: 1;
+            font-size: 12pt;
+            padding-bottom: 3vh;
+        }
+
+        .channel {
+            margin: 0 .5vh;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                width: 5vh;
+                height: 5vh;
+            }
+
+            h5 {
+                margin: 0;
+                margin-top: 1vh;
+            }
+        }
+    }
+
+
+    div.column {
+        height: 80vh;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}

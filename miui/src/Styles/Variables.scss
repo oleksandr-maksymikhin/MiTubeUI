@@ -1,0 +1,35 @@
+html[data-color-theme="light"] {
+    --color-p: #FFF5E9;
+    --color-s: #BDCC9D;
+    --color-b: #EBC49B;
+    --color-t: #fff;
+    --color-a: #DCA277;
+    --filter: brightness(0) saturate(100%) invert(75%) sepia(14%) saturate(1228%) hue-rotate(339deg) brightness(91%) contrast(88%);
+    --filter-hover: brightness(0) saturate(100%) invert(94%) sepia(16%) saturate(382%) hue-rotate(313deg) brightness(102%) contrast(102%);
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--color-a);
+    }
+}
+
+html[data-color-theme="dark"] {
+    --color-p: #47312A;
+    --color-s: #BDCC9D;
+    --color-b: #8D6137;
+    --color-t: #191412;
+    --color-a: #B28E5E;
+    --filter: brightness(0) saturate(100%) invert(40%) sepia(6%) saturate(3862%) hue-rotate(348deg) brightness(98%) contrast(90%);
+    --filter-hover: brightness(0) saturate(100%) invert(19%) sepia(30%) saturate(611%) hue-rotate(326deg) brightness(89%) contrast(90%);
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--color-b);
+    }
+}
+
+$primary-bg: var(--color-b);
+$primary-color: var(--color-p);
+$secondary-color: var(--color-s);
+$text-color: var(--color-t);
+$button-color: var(--color-a);
+$svg-filter: var(--filter);
+$svg-filter-hover: var(--filter-hover);

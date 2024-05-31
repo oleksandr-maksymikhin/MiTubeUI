@@ -1,0 +1,130 @@
+@import "../Variables.scss";
+
+.studio{
+    
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+
+.panel-settings{
+    font-family: 'Inter', sans-serif;
+    left: 50%;
+    font-size: 32pt\x;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primary-color;
+    margin: 0;
+}
+
+.columncontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left,
+.right{
+    
+    width: 26vw;
+    flex-grow: 0;
+    margin: 50px 50px 50px 29px;
+    padding: 49px 50px 39px;
+    border-radius: 30px;
+    background-color: $button-color;
+    text-align: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hr{
+          border: 1px solid $primary-bg;;
+          width: 100%;
+          margin-bottom: 10%;
+    }
+   
+    
+}
+.image{
+    width: 80%;
+    height: auto;
+}
+.paragraf-upload{
+    flex-grow: 0;
+    margin: 25px 0 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $text-color;
+}
+
+
+.info {
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px;
+    font-family: 'Inter',sans-serif;
+    font-size: 24px;
+    color: $primary-color;
+    background-color: $primary-bg;
+    border-radius: 30px;
+    width: 100%;
+
+}
+.number-sub{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.info-time{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.subscribers-block{
+    justify-content: left ;
+    text-align: left;
+}
+
+.canal-analitics{
+    color: $text-color;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 3%;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .studio{
+        margin-left:12vw;;
+        .left,
+        .right{
+            width: 50vw;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 479px) {
+    .studio{
+        margin-left:7vw;;
+        .left,
+        .right{
+        width: 50vw;
+    }
+    }
+   
+}

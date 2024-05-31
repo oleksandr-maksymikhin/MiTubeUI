@@ -1,0 +1,154 @@
+@import "../Variables.scss";
+
+.feedbackMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 19.5vw;
+    height: 57.2vh;
+    min-width: 250px;
+    min-height: 590px;
+
+    .n3{
+        font-size: 15px;
+    }
+    
+    #bt{
+        font-size: 20px;
+        padding: 1vh 2vw;
+        width: 16vw;
+        height: 8vh; 
+        border-radius: 30px;
+    }
+    #bt:last-child{
+        width: 8vw;
+        align-self: self-end;
+        margin:  1vh 0  1vh 0;
+    }
+     
+    
+    .feedback{
+        
+        align-items: center;
+        justify-content: center;
+        height: 7vh;
+        font-size: 20px; 
+        margin:   1vh 0px 1vh 0px ;
+    
+    }
+    hr{
+        width: 18vw;
+        margin:  1vh 0px 1vh 0px;
+    }
+    .textarea {
+        resize: none;
+        overflow: hidden;
+        border:1px solid $button-color;
+        border-radius: 30px;
+        height: 19vh;
+        width: 18.2vw;
+       
+    }
+   
+    .inform{
+        display: flex;
+        flex-direction: row ;
+        align-self: self-start;
+        margin-left: 1.5vw;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+    .inform:last-of-type{
+       height:  6vh;
+       margin-bottom: 1vh;
+       padding: 1vh 0 1vh 0;
+       
+    }
+    
+    .check{
+        margin-left: 4vw;
+    }
+
+    
+    .checkboxes__item{
+        justify-self: center;
+        align-self: start;
+    }
+      input[type="checkbox"].custom-input {
+        border-radius: 10px;
+        border: 2px solid $button-color;
+        width: 30px;
+        height: 30px;  
+        
+      }
+      
+
+      .checkbox.style-b {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .checkbox.style-b input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      .checkbox.style-b input:checked ~ .checkbox__checkmark {
+        background-color: $primary-color;
+      }
+      .checkbox.style-b:hover input ~ .checkbox__checkmark  {
+        background-color: $primary-bg;
+      }
+      .checkbox.style-b input:checked ~ .checkbox__checkmark:after {
+        opacity: 1;
+      }
+      
+      .checkbox.style-b:hover input:checked ~ .checkbox__checkmark {
+        background-color: $primary-bg;
+      }
+      .checkbox.style-b .checkbox__checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: $primary-color;
+        border: 2px solid $button-color;
+        transition: background-color 0.25s ease;
+        border-radius: 10px;
+      }
+      .checkbox.style-b .checkbox__checkmark:after {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 1px;
+        width: 10px;
+        height: 17px;
+        border: solid $button-color;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+        transition: opacity 0.25s ease;
+      }
+      .checkbox.style-b .checkbox__body {
+        color: $primary-color;
+        line-height: 1.4;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    
+     
+
+
+  
+
+}
+

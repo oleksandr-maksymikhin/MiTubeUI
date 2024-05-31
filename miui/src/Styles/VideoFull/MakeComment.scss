@@ -1,0 +1,103 @@
+@import "../Variables.scss";
+
+.sub-com {
+    display: flex;
+    align-items: center;
+
+    >* {
+        margin: 5px 1vw;
+    }
+
+}
+
+.userImg {
+    height: 70px;
+    width: 70px;
+    margin: 5px 1vw 5px 0px;
+    border-radius: 30px;
+}
+
+.make-comment {
+    width: 55.5vw;
+    background-color: $text-color;
+    border-radius: 30px;
+    margin: 0.5vh 0;
+    height: 70px;
+    border: 1px solid $button-color;
+
+    input[type="text"] {
+        border: 1px $button-color;
+        width: 90%;
+        background: $text-color;
+        color: $button-color;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+    }
+
+    input[type="text"]::placeholder {
+
+        font-size: 20px;
+        color: $button-color;
+    }
+
+    button {
+        background: transparent;
+        background-color: $text-color;
+        color: $button-color;
+        padding: 0.5vh 1vh 0.5vh 1vh;
+
+        img {
+            width: 1.8vw;
+            height: 1.8vw;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+    .make-comment-mobile{
+        z-index: 999;
+        position: absolute;
+        width: 100%; 
+        
+    .make-comment {
+        height: 45px;
+        margin:auto;
+
+        input[type="text"] {
+           height: 30px;
+        }
+
+        .n3 {
+            font-size: 16px;
+        }
+
+        input[type="text"]::placeholder {
+            font-size: 16px;
+        }
+
+    }
+
+    .row {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        height: 61px;
+        background-color: $primary-color;
+        border-top: 1px $button-color;
+        align-items: center;
+        justify-content: center;
+
+        .userImg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}}
