@@ -10,7 +10,6 @@ export default
 
         <div className="notificationsMenu">
 
-
             <span className="inform">
                 <span className="n2 ">Notification</span>
             </span>
@@ -56,8 +55,6 @@ export default
                 <ToggleSwitch />
                 <span className="n3 ">Distribution of content</span>
             </span>
-
-
         </div>
     );
 }

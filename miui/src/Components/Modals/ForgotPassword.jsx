@@ -34,9 +34,6 @@ function ForgotPassword() {
     return randomCode;
   }
 
-
-
-  
   const sendEmail = async(e) => {
     await generateRandomCode();
    console.log(form.current);

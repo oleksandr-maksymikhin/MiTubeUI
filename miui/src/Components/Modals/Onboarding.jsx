@@ -20,7 +20,6 @@ const Onboarding = ({ handleClose, show }) => {
         } else {
             setSlideIndex(newIndex);
         }
-        
     };
 
     const currentSlide = (e) => {
@@ -65,8 +64,6 @@ const Onboarding = ({ handleClose, show }) => {
         for (i = 0; i < numberSlides; i++)
         {
             slides[i].style.display = "none";
-            
-            
         }
         for (i = 0; i < dot.length; i++){
            dot[i].classList.remove("active");
@@ -77,7 +74,6 @@ const Onboarding = ({ handleClose, show }) => {
     };
 
     const showHideClassName = show ? "modal display-block" : "modal display-none";
-    
     
 
 return (
@@ -113,8 +109,6 @@ return (
                         <div className='onboarding-text'>Watch and create new stories with millions of other people. We wish you the best time!</div>
                     </div>
                 </div>
-
-                
                 
             </div>
               <div className="dotcontainer">

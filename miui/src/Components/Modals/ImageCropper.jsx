@@ -3,17 +3,10 @@ import Cropper from "react-easy-crop";
 
 
 export const ImageCropper = ({image,onCropDone,onCropCancel,aspect}) => {
-
-
     const[crop,setCrop]=useState({x:0,y:0});
     const [zoom,setZoom]=useState(1);
-
     const[croppedArea,setCrroppedArea]=useState(null);
-    //const[aspectRatio, setAspectRatio]=useState(10/3);
-
-    
-
-
+ 
     const onCropComplete=(croppedAreaPercentage,croppedAreaPixels)=>{
         setCrroppedArea(croppedAreaPixels)
     }

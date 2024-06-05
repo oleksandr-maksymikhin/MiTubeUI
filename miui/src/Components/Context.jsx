@@ -95,8 +95,7 @@ function ContextWrapper() {
 	);
 
 	//const serverPort = "http://localhost:5208/api/v1";
-	const serverPort =
-		"https://app-beevi-web-eastus-dev-001.azurewebsites.net/api/v1";
+	const serverPort = "https://api-mitube-eastus-dev-001.azurewebsites.net/api/v1";
 
 	return (
 		<ThemeContext.Provider value={{ theme, setTheme }}>

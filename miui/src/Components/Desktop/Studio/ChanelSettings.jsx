@@ -15,8 +15,6 @@ function ChannelSettings() {
     const [aspectRatio,setAspectRatio]=useState(4 / 3);
     const [imgAfterCrop, setImgAfterCrop] = useState(null);
     
-    
-
     const[profilePhoto,setPhotoProfile]=useState(null);
     const[profileBanner,setProfileBanner]=useState(null);
     const[newUser,setNewUser]=useState({name:'',
@@ -121,7 +119,6 @@ function ChannelSettings() {
         formData.append('name',newUser.name);
         formData.append('nickname',newUser.nickname);
         formData.append('description',newUser.description);
-       /* ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} */
         if (newUser.posterFile) {
           if (newUser.posterFile instanceof Blob) {
               formData.append('PosterFile', newUser.posterFile, `myPoster${dateString}.jpeg`);
@@ -136,8 +133,6 @@ function ChannelSettings() {
               console.error('BanerFile is not a Blob:', newUser.banerFile);
           }
       }
-        //formData.append('PosterFile',newUser.posterFile, `myPoster${dateString}.jpeg`);
-       // formData.append('BanerFile',newUser.banerFile,`myBaner${dateString}.jpeg`);
         if(user.userTypeDescription=='Administrator')
           {
             formData.append('userTypeId',1);
@@ -146,7 +141,6 @@ function ChannelSettings() {
           {
             formData.append('userTypeId',2);
           }
-        //formData.append('userTypeId',user.userTypeId);
         const response=await fetch(`${serverPort}/Users/${user.id}`,{
                 method:'PUT',
                 credentials:'include',                           
@@ -167,9 +161,7 @@ function ChannelSettings() {
                 localStorage.setItem('userCookie',JSON.stringify(data));
                 setUser(data);
               console.log('new user',JSON.stringify(data));
-              //setActiveContent(<Studio/>);
-        //         //this.forceUpdate();
-             }
+            }
             
     }
 
@@ -260,18 +252,6 @@ function ChannelSettings() {
                     onChange={(e) => handleOnChangeBaner(e)}
                   />
                 </label>
-                {/* <label htmlFor="delete-photo" className="upload-button btn-lg">
-                  <input
-                    type="button"
-                    id="delete-photo"
-                    className="hidden"
-                    onClick={() => {
-                      setNewUser({ ...newUser, posterFile: null });
-                      setPhotoProfile(null);
-                    }}
-                  />
-                  <span>Remove</span>
-                </label> */}
               </div>
             </div>
           </div>
@@ -296,33 +276,9 @@ function ChannelSettings() {
                     onChange={(e) => handleOnChangePoster(e)}
                   />
                 </label>
-                {/* <label htmlFor="delete-baner" className="upload-button btn-lg">
-                  <span>Remove</span>
-                  <input
-                    type="button"
-                    id="delete-baner"
-                    className="hidden"
-                    onClick={() => {
-                      setNewUser({ ...newUser, banerFile: null });
-                      setProfileBanner(null);
-                    }}
-                  />
-                </label> */}
               </div>
             </div>
           </div>
-          {/* <div>URL channel</div>
-          <span>
-            This is the default web address for your channel. A set of numbers
-            and letters at the end of the link is a unique channel identifier.
-          </span>
-          <br></br>
-          <input
-            type="text"
-            name="urlChanel"
-            className="input-copy-url"
-            readOnly
-          /> */}
           <div>Contact Information</div>
           <span>Specify how to contact you regarding cooperation.</span>
           <br></br>

@@ -17,40 +17,6 @@ function Register({ onSuccessfulRegister }) {
   const { serverPort } = useContext(serverContext);
   const { setUser } = useContext(userContext);
 
-
-//   const handleNewUser=async()=>{
-//     let alert=document.getElementById('alert-p');
-//     if(!userCredentials.email|| !userCredentials.password) {
-//         alert.textContent='*Enter your email address and password!';
-//     }
-//         else {
-//             console.log(userCredentials);
-//         await fetch(`${serverPort}/Usercredentials`,{
-//                 method:'POST',
-//             credentials:'include',
-//                 headers:{
-//                     'Content-Type':'application/json'
-//                 },
-//                 body:JSON.stringify(userCredentials)
-//             })
-//             .then(response=>{
-//                 if(response.ok){
-//                     console.log('Error HTTP:'+response.status);
-//                 }
-//                 response.json();
-//             })
-//             .then(data=>{
-//                 console.log('Responce from server: '+data);
-//                 setActiveModal(<Onboarding show={"true"} handleClose={() => setActiveModal()}/>);
-//         })
-//             .catch(
-//             error=>{console.error(error);
-//         })
-//             alert.textContent='';
-//         onSuccessfulRegister();
-//         }
-// }
-
   const handleNewUser = async () => {
     let alert = document.getElementById("alert-p");
     if (!userCredentials.email || !userCredentials.password) {
@@ -115,6 +81,12 @@ function Register({ onSuccessfulRegister }) {
           }
           name="password"
           placeholder="Enter your password"
+          className={`input-register ${checked ? "password" : ""}`}
+        />
+        <input
+          type={checked ? "text" : "password"}
+          name="password"
+          placeholder="Repeat your password"
           className={`input-register ${checked ? "password" : ""}`}
         />
         <p id="alert-p"></p>

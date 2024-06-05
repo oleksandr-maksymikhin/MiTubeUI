@@ -32,8 +32,6 @@ export default function Subscriptions() {
   return (
     <>{subscriptions&&(
       <div className="subscriptions-content">
-        {/* {platform === "desktop" ? <SubscriptionsDesktop /> : <SubscriptionsMobile/>} */}
-
         <SubscriptionsAll subscriptions={subscriptions}/>
       </div>)}
     </>

@@ -4,11 +4,9 @@ import "../../../Styles/Settings/Privacy.scss";
 export default
     function Privacy() {
 
-
     return (
 
         <div className="PrivacyMenu">
-
 
             <span className="inform">
                 <span className="n3 ">Privacy</span>
@@ -48,7 +46,6 @@ export default
 
                 </span>
 
-
                 <span className="inform privacy ">
                     <span className="inform first" >
 
@@ -74,11 +71,6 @@ export default
 
                 </span>
             </span>
-
-
-
-
-
         </div>
     );
 }

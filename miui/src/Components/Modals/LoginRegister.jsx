@@ -13,9 +13,7 @@ function LoginRegister({onEnterClick,handleClose}) {
 
     const [showForgotPassword, setShowForgotPassword] = useState(false);
     const [showRegister, setShowRegister] = useState(false);
-   
     
-
     const handleForgotPassword = () => {
         setShowForgotPassword(true);
     }
@@ -23,8 +21,6 @@ function LoginRegister({onEnterClick,handleClose}) {
     const handleRegister = () => {
         setShowRegister(true);
     }
-
-    
 
     return (
         <div className='login-register'>
@@ -57,13 +53,8 @@ function LoginRegister({onEnterClick,handleClose}) {
                     <a>Conditions</a>
                 </div>
             </div>
-          
-     
-</div>
+        </div>
     );
 }
-
-
-
 
 export default LoginRegister;

@@ -27,7 +27,6 @@ function Content() {
           </div>
         </div>
         { activeModal }
-        { /* если нужно открыть модальное окно, то нужно использовать setActiveModal */}
       </>
     );
   

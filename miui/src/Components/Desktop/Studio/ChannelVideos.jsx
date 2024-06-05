@@ -10,8 +10,6 @@ import open_access from '../../../Assets/Icons/open_access.svg';
 import access_link from '../../../Assets/Icons/access_link.svg';
 import access_close from '../../../Assets/Icons/access_close.svg';
 
-
-
 export default
 
 function ChannelVideos() {
@@ -100,8 +98,6 @@ function PlaylistRow({playlist,onPlayListSelected}) {
         return new Date(dateString).toLocaleDateString("en-US", options);
       }
 
-   
-
     return (
         <tr className="playlist-row">
             <td>
@@ -132,11 +128,8 @@ function PlaylistRow({playlist,onPlayListSelected}) {
     );
 }
 function VideoFromPlaylist({playlistId}){
-
     const {serverPort } = useContext(serverContext);
-    
     const [playlists, setPlaylists] = useState([]);
-
 
     useEffect(() => {
         const fetchPlaylists= async () => {
@@ -154,8 +147,6 @@ function VideoFromPlaylist({playlistId}){
         };
         fetchPlaylists();
       }, []);
-
-
 
 
     return (
@@ -181,13 +172,9 @@ function VideoFromPlaylist({playlistId}){
 }
 
 function VideoTable() {
-
     const {user,setUser}=useContext(userContext);
     const { serverPort } = useContext(serverContext);
-    
     const [videos, setVideos] = useState([]);
-    
-    
 
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('userCookie')));

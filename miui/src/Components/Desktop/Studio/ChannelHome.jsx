@@ -30,10 +30,6 @@ function ChannelHome() {
     fetchAnalitics();
  },[]);
 
- 
-
-
-
 
     return (
        

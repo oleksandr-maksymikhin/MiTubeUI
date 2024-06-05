@@ -12,9 +12,6 @@ import Playlist from "../../Common/Playlist"
 
 export default
 function ChannelMobile({ isOwner, id,user,handleFollow}) {
-
-    //! TODO : Fetch channel data from API
-    
     
     const { serverPort } = useContext(serverContext);
     const { setActiveContent } = useContext(ActiveContentContext);

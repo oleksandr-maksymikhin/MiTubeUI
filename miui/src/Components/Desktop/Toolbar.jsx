@@ -168,20 +168,12 @@ export default function ToolbarDesktop({ openFilter }) {
 
         <button
           onClick={showSearchOnClick}
-          //onClick={/* () => {setActiveContent(<Search videos={videos} />); */showSearchOnClick()}
         >
           <img id="search-btn" alt="Magnifying glass icon" src={search_icon} />
         </button>
       </span>
 
       <span className="sub-menu profile">
-        {/* <button className="btn-sm" onClick={openFilter}>
-          Filters
-        </button>
-        <button className="icon-btn" style={{ marginTop: 10 + "px" }}>
-          <img className="icn" src={notification_icon} alt="notifications" />
-        </button> */}
-
         <button
            ref={dropdownRef}
           className="dropbtn icon-button icon-btn"

@@ -6,9 +6,7 @@ import SubscriptionsAll from "../../Common/SubscriptionsAll";
 
 export default
 function NotificationsMobile() {
-
     let {setActiveContent} = useContext(ActiveContentContext);
-
    
     return (
         <div className="mobile-subscriptions-container mobile">

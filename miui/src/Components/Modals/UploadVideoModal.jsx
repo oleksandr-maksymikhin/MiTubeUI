@@ -129,7 +129,6 @@ export default function UploadVideoModal({ handleClose, show }) {
     });
   };
 
-  // а воно так має працювати? base4 to blob (maybe)
   const b64toBlob = (b64Data, contentType = "", sliceSize = 512) => {
     const byteCharacters = atob(b64Data);
     const byteArrays = [];

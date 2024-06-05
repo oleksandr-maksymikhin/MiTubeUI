@@ -10,21 +10,16 @@ function PhotoCropping({handleClose,show,selectedImage,aspectRatio, propOnImageC
     const[image,setImage]=useState("");
     const[aspect,setAspect]=useState();
     const [imgAfterCrop,setImgAfterCrop]=useState("");
-    //const [currentPage,setCurrentPage]=useState("choose-img");
-
 
     useEffect(()=>{
         setImage(selectedImage);
         setAspect(aspectRatio);
-        //setCurrent("crop-img");
     },[selectedImage,aspect])
 
     const onCropDone=(imgCroppedArea)=>{
-
         const canvasEle=document.createElement("canvas");
         canvasEle.width=imgCroppedArea.width;
         canvasEle.height=imgCroppedArea.height;
-
         const context=canvasEle.getContext("2d");
 
         let imageObj1=new Image();
@@ -51,7 +46,6 @@ function PhotoCropping({handleClose,show,selectedImage,aspectRatio, propOnImageC
     }
 
     const onCropCancel=()=>{
-
     }
 
     return (
@@ -64,9 +58,7 @@ function PhotoCropping({handleClose,show,selectedImage,aspectRatio, propOnImageC
                 onCropCancel={onCropCancel}
                 aspect={aspect}
                 className="cropper"
-                />
-                 
-
+            />
         </div>
         </div>
     )

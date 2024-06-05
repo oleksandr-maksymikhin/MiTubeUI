@@ -47,12 +47,6 @@ export default function History() {
 
           setPlaylists(data);
           return data;
-        
-      
-
-    //   const sortedVideos = fetchedVideos.sort(
-    //     (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
-    //   );
       
       //setPlaylists(sortedVideos);
     } catch (error) {

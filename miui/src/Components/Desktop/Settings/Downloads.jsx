@@ -7,8 +7,6 @@ export default
     return (
 
         <div className="downloadsMenu">
-
-
             <span className="inform">
                 <span className="n2 ">Downloads</span>
             </span>
@@ -50,10 +48,6 @@ export default
             <span className="inform ">
                 <button className="btn-lg">Delete all downloads</button>
             </span>
-
-
-
-
         </div>
     );
 }
